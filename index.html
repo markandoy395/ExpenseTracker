@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <aside>
+    <div class="parent">
+        <div class="div">DashBoard</div>
+        <div class="div1">
+            <div class="title-bar">
+                <p>Add Transaction</p>
+                <button id="Expense">Add Expense</button>
+                <button id="Income">Add Income</button>
+            </div>
+              <div class="overlay">
+                <button class="close">&times;</button>
+                <input type="text" id="addName" placeholder="Enter Expense Name"required>
+                <input type="number" id="addAmount" placeholder="Enter Amount"required>
+                <button id="submit">submit</button>
+             </div>
+        </div>
+        <div class="div2">view Transaction</div>
+        <div class="div3">categories</div>
+    </div>
+  </aside>
+    <main>
+        <div class="top">
+            <button id="Hamburger">&#9776;</button>
+            <img src="images/119239589_349348569807610_8020609877401263206_n.jpg" alt="Expense Tracker Image" >
+            <h1>My budget</h1>
+            <p id="#">20000</p>
+        </div>
+       
+        <div class="content">
+            <header>
+                <button  id="Today">Today</button>
+                <button id="Month">Month</button>
+            </header>
+            <div class="dateAndTotal">
+                <p id="date">13 Aug 2025</p>
+                <p id="totalAmount"></p>
+            </div>
+            <section>
+                
+                <ul id="displayExpense">
+                </ul>
+        </div>
+    </main>
+</div>
+    
+</body>
+<script src="script.js">
+</script>
+</html>
